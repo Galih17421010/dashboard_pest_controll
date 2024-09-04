@@ -1,4 +1,9 @@
 @extends('layouts.master')
+@section('navhead')
+<div class="header header-fixed header-auto-show header-logo-center">
+    @include('layouts.navhead')
+  </div>
+@endsection
 @section('content')
 <div class="content mt-2">
     <div class="d-flex">

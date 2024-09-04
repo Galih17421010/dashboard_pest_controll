@@ -12,9 +12,8 @@
   <body class="theme-light" data-highlight="highlight-red" data-gradient="body-default">
     <div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div>
     <div id="page">
-      <div class="header header-fixed header-auto-show header-logo-center">
-        @include('layouts.navhead')
-      </div>
+
+      @yield('navhead')
       <div id="footer-bar" class="footer-bar-1">
         @include('layouts.menu')
       </div>
