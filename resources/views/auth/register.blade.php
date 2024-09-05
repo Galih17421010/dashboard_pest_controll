@@ -42,7 +42,7 @@
                                 @csrf
                                 <div class="input-style no-borders has-icon validate-field">
                                     <i class="fa fa-user"></i>
-                                    <input type="name" class="form-control validate-name" id="name" placeholder="Name" required />
+                                    <input type="name" name="name" class="form-control validate-name" id="name" placeholder="Name" required />
                                     <label for="form1a" class="color-blue-dark font-10 mt-1">Name</label>
                                     <i class="fa fa-times disabled invalid color-red-dark"></i>
                                     <i class="fa fa-check disabled valid color-green-dark"></i>
@@ -50,7 +50,7 @@
                                 </div>
                                 <div class="input-style no-borders has-icon validate-field mt-2" >
                                     <i class="fa fa-at"></i>
-                                    <input type="email" class="form-control validate-name" id="email" placeholder="Email" required/>
+                                    <input type="email" name="email" class="form-control validate-name" id="email" placeholder="Email" required/>
                                     <label for="form1aa" class="color-blue-dark font-10 mt-1" >Email</label>
                                     <i class="fa fa-times disabled invalid color-red-dark"></i>
                                     <i class="fa fa-check disabled valid color-green-dark"></i>
@@ -58,7 +58,7 @@
                                 </div>
                                 <div class="input-style no-borders has-icon validate-field mt-2">
                                     <i class="fa fa-lock"></i>
-                                    <input type="password" class="form-control validate-text" id="password" placeholder="Choose a Password"/>
+                                    <input type="password" name="password" class="form-control validate-text" id="password" placeholder="Choose a Password"/>
                                     <label for="form3a" class="color-blue-dark font-10 mt-1">Choose a Password</label>
                                     <i class="fa fa-times disabled invalid color-red-dark"></i>
                                     <i class="fa fa-check disabled valid color-green-dark"></i>
@@ -66,7 +66,7 @@
                                 </div>
                                 <div class="input-style no-borders has-icon validate-field mt-2">
                                     <i class="fa fa-lock"></i>
-                                    <input type="password" class="form-control validate-text" id="password_confirmation" placeholder="Confirm your Password" required/>
+                                    <input type="password" name="password_confirmation" class="form-control validate-text" id="password_confirmation" placeholder="Confirm your Password" required/>
                                     <label for="form3a1" class="color-blue-dark font-10 mt-1" >Confirm your Password</label>
                                     <i class="fa fa-times disabled invalid color-red-dark" ></i>
                                     <i class="fa fa-check disabled valid color-green-dark" ></i>
@@ -77,7 +77,8 @@
                                         >Already Registered? Sign in Here</a
                                     >
                                 </div>
-                                <a type="submit" class="back-button btn btn-full btn-m shadow-large rounded-sm text-uppercase font-900 bg-highlight">Create Account</a>
+                                <a href="{{ route('register') }}" onclick="event.preventDefault();
+                                this.closest('form').submit();" type="submit" class="btn btn-full btn-m shadow-large rounded-sm text-uppercase font-900 bg-highlight">Create Account</a>
                             </form>
                         </div>
                     </div>

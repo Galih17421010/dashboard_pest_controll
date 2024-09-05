@@ -2,7 +2,7 @@
 @section('navhead')
 <div class="header header-fixed header-auto-show header-logo-center">
     @include('layouts.navhead')
-  </div>
+</div>
 @endsection
 @section('menu-bottom')
 <div id="footer-bar" class="footer-bar-1">
@@ -20,7 +20,7 @@
       <div class="align-self-center ms-auto">
         <a href="#" data-menu="menu-favorites" class="icon icon-s bg-theme rounded-l shadow-l rounded-m ms-2 color-theme"><i class="fa fa-heart color-red-dark font-14"></i></a>
         <a href="#" data-menu="menu-cart" class="icon icon-s bg-theme rounded-l shadow-l rounded-m ms-2 color-theme"><i class="fa fa-shopping-bag font-14"></i></a>
-        <a href="page-delivery-profile.html" class="icon icon-s bg-theme rounded-l shadow-l rounded-m ms-2 color-blue-dark"><i class="fa fa-user font-14"></i></a>
+        <a href="{{route('profile.index')}}" class="icon icon-s bg-theme rounded-l shadow-l rounded-m ms-2 color-blue-dark"><i class="fa fa-user font-14"></i></a>
       </div>
     </div>
   </div>

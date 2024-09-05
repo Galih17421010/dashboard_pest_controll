@@ -10,24 +10,23 @@
     @include('layouts.head')
     @vite(['resources/css/app.css', 'resources/js/app.js'])
   </head>
-  <body class="theme-light" data-highlight="highlight-red" data-gradient="body-default">
+  <body class="theme-light" data-highlight="highlight-blue" data-gradient="body-default">
     <div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div>
     <div id="page">
-      <div class="header header-fixed header-auto-show header-logo-center">
-        @include('layouts.navhead')
-      </div>
+
+        @yield('navhead')
+
       <div id="footer-bar" class="footer-bar-1">
         @include('layouts.menu')
       </div>
+
       @include('components.snackbar-cart')
       @include('components.snackbar-favorites')
 
 
-      <div class="page-content header-clear-small">
         @yield('content')
-      </div>
 
-     @include('layouts.settings')
+      @include('layouts.settings')
 
       @include('layouts.highlights')
 

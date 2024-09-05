@@ -3,20 +3,14 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
-        <meta
-            name="apple-mobile-web-app-status-bar-style"
-            content="black-translucent"
-        />
-        <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover"
-        />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover"/>
         <meta name="csrf-token" content="{{ csrf_token() }}">
         <title>{{ config('app.name', 'Laravel') }} - Login</title>
         @include('layouts.head')
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
-    <body class="theme-light" data-highlight="highlight-red" data-gradient="body-default">
+    <body class="theme-light" data-highlight="highlight-blue" data-gradient="body-default">
         <div id="preloader">
             <div class="spinner-border color-highlight" role="status"></div>
         </div>
@@ -38,22 +32,22 @@
                             <p class="color-highlight text-center font-12">
                                 Let's get you logged in
                             </p>
-                            {{-- <form method="POST" action="{{ route('login') }}"> --}}
-                                {{-- @csrf --}}
+                            <form method="POST" action="{{ route('login') }}"> @csrf
                                 <div class="input-style no-borders has-icon validate-field">
                                     <i class="fa fa-user"></i>
-                                    <input type="email" class="form-control validate-name" id="email" placeholder="Email" required />
-                                    <label for="email" class="color-blue-dark font-10 mt-1">Name</label>
+                                    <input type="email" name="email" class="form-control validate-name" id="email" placeholder="Email" required />
+                                    <label for="email" class="color-blue-dark font-10 mt-1">Email</label>
                                     <i class="fa fa-times disabled invalid color-red-dark"></i>
                                     <i class="fa fa-check disabled valid color-green-dark"></i>
                                     <em>(required)</em>
                                 </div>
                                 <div class="input-style no-borders has-icon validate-field mt-4" >
                                     <i class="fa fa-lock"></i>
-                                    <input type="password" class="form-control validate-password" id="password" placeholder="Password" required/>
+                                    <input type="password" name="password" class="form-control validate-password" id="password" placeholder="Password" required/>
                                     <label for="password" class="color-blue-dark font-10 mt-1" >Password</label>
                                     <i class="fa fa-times disabled invalid color-red-dark"></i>
                                     <i class="fa fa-check disabled valid color-green-dark"></i>
+                                    <ul class="text-sm text-red-600 space-y-1 mt-2"><li></li></ul>
                                     <em>(required)</em>
                                 </div>
                                 <div class="d-flex mt-4 mb-4">
@@ -66,8 +60,9 @@
                                         @endif
                                     </div>
                                 </div>
-                                <a href="{{ route('login') }}" class="back-button btn btn-full btn-m shadow-large rounded-sm text-uppercase font-700 bg-highlight" type="submit">LOGIN</a>
-                            {{-- </form> --}}
+                                <a href="{{ route('login') }}" onclick="event.preventDefault();
+                                this.closest('form').submit();" class="btn btn-full btn-m shadow-large rounded-sm text-uppercase font-700 bg-highlight submit" type="submit">LOGIN</a>
+                            </form>
                             <div class="divider mt-4"></div>
                             <a href="#" class="btn btn-icon btn-m btn-full shadow-l rounded-sm bg-facebook text-uppercase font-700 text-start">
                                 <i class="fab fa-facebook-f text-center bg-transparent"></i>Sign in with Facebook</a>
