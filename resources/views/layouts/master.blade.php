@@ -8,12 +8,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
     <title>{{ config('app.name', 'Laravel') }}</title>
     @include('layouts.head')
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
   </head>
   <body class="theme-light" data-highlight="highlight-red" data-gradient="body-default">
     <div id="preloader"><div class="spinner-border color-highlight" role="status"></div></div>
     <div id="page">
-
-      @yield('navhead')
+      <div class="header header-fixed header-auto-show header-logo-center">
+        @include('layouts.navhead')
+      </div>
       <div id="footer-bar" class="footer-bar-1">
         @include('layouts.menu')
       </div>

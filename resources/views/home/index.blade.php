@@ -4,8 +4,14 @@
     @include('layouts.navhead')
   </div>
 @endsection
+@section('menu-bottom')
+<div id="footer-bar" class="footer-bar-1">
+    @include('layouts.menu')
+  </div>
+@endsection
 @section('content')
-<div class="content mt-2">
+<div class="page-content header-clear-small">
+  <div class="content mt-2">
     <div class="d-flex">
       <div class="align-self-center">
         <h1 class="font-26">Order Now</h1>
@@ -245,4 +251,6 @@
     <p class="footer-links"><a href="#" class="color-highlight">Privacy Policy</a> | <a href="#" class="color-highlight">Terms and Conditions</a> | <a href="#" class="back-to-top color-highlight"> Back to Top</a></p>
     <div class="clear"></div>
   </div>
+</div>
+
 @endsection
