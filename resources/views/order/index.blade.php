@@ -3,7 +3,6 @@
 @section('title','Order')
 <div class="header header-fixed header-logo-center">
     @include('layouts.navhead')
-
 </div>
 @endsection
 

@@ -1,5 +1,6 @@
 @extends('layouts.master')
 @section('navhead')
+@section('title','Profile')
 <div class="header header-fixed header-logo-center">
     @include('layouts.navhead')
 </div>

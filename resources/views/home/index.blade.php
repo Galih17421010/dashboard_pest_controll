@@ -19,8 +19,8 @@
         <p class="mb-0 mt-n2 font-11">Home Services App</p>
       </div>
       <div class="align-self-center ms-auto">
-        <a href="#" data-menu="menu-favorites" class="icon icon-s bg-theme rounded-l shadow-l rounded-m ms-2 color-theme"><i class="fa fa-heart color-red-dark font-14"></i></a>
-        <a href="#" data-menu="menu-cart" class="icon icon-s bg-theme rounded-l shadow-l rounded-m ms-2 color-theme"><i class="fa fa-shopping-bag font-14"></i></a>
+        <a href="{{route('favorite.index')}}"  class="icon icon-s bg-theme rounded-l shadow-l rounded-m ms-2 color-theme"><i class="fa fa-heart color-red-dark font-14"></i></a>
+        <a href="{{route('cart.index')}}" class="icon icon-s bg-theme rounded-l shadow-l rounded-m ms-2 color-theme"><i class="fa fa-shopping-bag font-14"></i></a>
         <a href="{{route('profile.index')}}" class="icon icon-s bg-theme rounded-l shadow-l rounded-m ms-2 color-blue-dark"><i class="fa fa-user font-14"></i></a>
       </div>
     </div>
@@ -28,7 +28,7 @@
   <div class="content mt-n1">
     <div class="search-box bg-theme color-theme rounded-m shadow-l">
       <i class="fa fa-search"></i>
-      <input type="text" class="border-0" placeholder="Search.. - try Hamburger " data-search />
+      <input type="text" class="border-0" placeholder="Search.. " data-search />
       <a href="#" class="clear-search disabled mt-0"><i class="fa fa-times color-red-dark"></i></a>
     </div>
     <div class="search-results disabled-search-list mt-3">

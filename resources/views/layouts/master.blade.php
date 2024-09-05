@@ -20,8 +20,7 @@
         @include('layouts.menu')
       </div>
 
-      @include('components.snackbar-cart')
-      @include('components.snackbar-favorites')
+
 
 
         @yield('content')
@@ -32,11 +31,8 @@
 
       @include('layouts.backgrounds')
 
-      @include('layouts.share')
 
-      @include('layouts.menu-cart')
 
-      @include('layouts.menu-favorites')
     </div>
     @include('layouts.script')
   </body>

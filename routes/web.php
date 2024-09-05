@@ -1,10 +1,13 @@
 <?php
 
+use App\Http\Controllers\CartController;
 use App\Http\Controllers\CleaningController;
+use App\Http\Controllers\FavoriteController;
 use App\Http\Controllers\LaundryController;
 use App\Http\Controllers\OrderController;
 use App\Http\Controllers\PestController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\SearchController;
 use Illuminate\Support\Facades\Route;
 
 // Route::get('/', function () {
@@ -29,6 +32,12 @@ Route::middleware('auth')->group(function () {
     Route::resource('pest', PestController::class)->names('pest');
 
     Route::resource('order', OrderController::class)->names('order');
+
+    Route::resource('search', SearchController::class)->names('search');
+
+    Route::resource('cart', CartController::class)->names('cart');
+
+    Route::resource('favorite', FavoriteController::class)->names('favorite');
 
 });
 
