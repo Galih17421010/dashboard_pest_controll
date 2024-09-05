@@ -60,14 +60,15 @@
                                         @endif
                                     </div>
                                 </div>
+                                <div class="divider mt-4"></div>
                                 <a href="{{ route('login') }}" onclick="event.preventDefault();
                                 this.closest('form').submit();" class="btn btn-full btn-m shadow-large rounded-sm text-uppercase font-700 bg-highlight submit" type="submit">LOGIN</a>
                             </form>
-                            <div class="divider mt-4"></div>
-                            <a href="#" class="btn btn-icon btn-m btn-full shadow-l rounded-sm bg-facebook text-uppercase font-700 text-start">
+                            {{-- <div class="divider mt-4"></div> --}}
+                            {{-- <a href="#" class="btn btn-icon btn-m btn-full shadow-l rounded-sm bg-facebook text-uppercase font-700 text-start">
                                 <i class="fab fa-facebook-f text-center bg-transparent"></i>Sign in with Facebook</a>
                             <a href="#" class="btn btn-icon btn-m btn-full shadow-l rounded-sm bg-twitter text-uppercase font-700 text-start mt-2" >
-                                <i class="fab fa-twitter text-center bg-transparent"></i>Sign in with Twitter</a>
+                                <i class="fab fa-twitter text-center bg-transparent"></i>Sign in with Twitter</a> --}}
                         </div>
                     </div>
                 </div>

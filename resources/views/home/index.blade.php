@@ -21,7 +21,7 @@
       <div class="align-self-center ms-auto">
         <a href="{{route('favorite.index')}}"  class="icon icon-s bg-theme rounded-l shadow-l rounded-m ms-2 color-theme"><i class="fa fa-heart color-red-dark font-14"></i></a>
         <a href="{{route('cart.index')}}" class="icon icon-s bg-theme rounded-l shadow-l rounded-m ms-2 color-theme"><i class="fa fa-shopping-bag font-14"></i></a>
-        <a href="{{route('profile.index')}}" class="icon icon-s bg-theme rounded-l shadow-l rounded-m ms-2 color-blue-dark"><i class="fa fa-user font-14"></i></a>
+        {{-- <a href="{{route('profile.index')}}" class="icon icon-s bg-theme rounded-l shadow-l rounded-m ms-2 color-blue-dark"><i class="fa fa-user font-14"></i></a> --}}
       </div>
     </div>
   </div>
@@ -35,38 +35,38 @@
       <div class="card card-style mx-0 px-2 p-0 mb-0">
         <a href="#" class="d-flex py-2" data-filter-item data-filter-name="all hamburger burger beef buns">
           <div>
-            <img src="assets/images/food/500x500/1.png" class="rounded-sm me-1" width="45" alt="img" />
+            <img src="assets/images/banner1.jpg" class="rounded-sm me-1" width="45" alt="img" />
           </div>
           <div>
             <span class="color-highlight font-400 d-block pt-0 mb-n2 font-11">Fast Food</span>
             <strong class="color-theme font-14 d-block mt-n2">Hamburger</strong>
           </div>
           <div class="ms-auto text-center align-self-center pe-2">
-            <h5 class="line-height-xs font-18 pt-3">$9.<sup class="font-14">50</sup></h5>
+            <h5 class="line-height-xs font-18 pt-3">Rp 9.<sup class="font-14">50</sup></h5>
           </div>
         </a>
         <a href="#" class="d-flex py-2" data-filter-item data-filter-name="all apple watch 42 leather edition white">
           <div>
-            <img src="assets/images/food/500x500/2.png" class="rounded-sm me-1" width="45" alt="img" />
+            <img src="assets/images/banner2.jpg" class="rounded-sm me-1" width="45" alt="img" />
           </div>
           <div>
             <span class="color-highlight font-400 d-block pt-0 mb-n2 font-11">Sweet Tooth</span>
             <strong class="color-theme font-14 d-block mt-n2">Blackberry Doughnuts</strong>
           </div>
           <div class="ms-auto text-center align-self-center pe-2">
-            <h5 class="line-height-xs font-18 pt-3">$5.<sup class="font-14">50</sup></h5>
+            <h5 class="line-height-xs font-18 pt-3">Rp 5.<sup class="font-14">50</sup></h5>
           </div>
         </a>
         <a href="#" class="d-flex py-2" data-filter-item data-filter-name="all apple watch lime edition 44 green">
           <div>
-            <img src="assets/images/food/500x500/3.png" class="rounded-sm me-1" width="45" alt="img" />
+            <img src="assets/images/banner3.jpg" class="rounded-sm me-1" width="45" alt="img" />
           </div>
           <div>
             <span class="color-highlight font-400 d-block pt-0 mb-n2 font-11">Pizza</span>
             <strong class="color-theme font-14 d-block mt-n2">Prosciutto e Funghi</strong>
           </div>
           <div class="ms-auto text-center align-self-center pe-2">
-            <h5 class="line-height-xs font-18 pt-3">$16.<sup class="font-14">50</sup></h5>
+            <h5 class="line-height-xs font-18 pt-3">Rp 16.<sup class="font-14">50</sup></h5>
           </div>
         </a>
       </div>
@@ -85,9 +85,9 @@
       <div class="splide__list">
         <div class="splide__slide">
           <div class="card card-style mx-3">
-            <img src="assets/images/food/500x500/2.png" class="img-fluid my-3" />
+            <img src="assets/images/banner4.jpg" class="img-fluid my-3" />
             <div class="content">
-              <h3 class="mb-0">Blackberry Doughnuts</h3>
+              <h3 class="mb-0">Laundry Full Services</h3>
               <a href="#">
                 <i class="fa fa-star color-yellow-dark font-10"></i>
                 <i class="fa fa-star color-yellow-dark font-10"></i>
@@ -96,13 +96,13 @@
                 <i class="fa fa-star color-yellow-dark font-10"></i>
                 <span class="font-11 ps-2 color-theme opacity-30">Based on 331 Reviews</span>
               </a>
-              <h5 class="font-13 font-600 opacity-50 pt-1 pb-2">Fresh Blackberries with Puff Pastry Doughnuts with Sugar Glaze.</h5>
+              <h5 class="font-13 font-600 opacity-50 pt-1 pb-2">Fresh Washing Cloth</h5>
               <div class="divider mb-2"></div>
               <div class="d-flex">
                 <div class="align-self-center">
-                  <h1 class="mt-1 mb-n2 font-800">$4<sup class="font-400 font-14">.99</sup></h1>
+                  <h1 class="mt-1 mb-n2 font-800">Rp 4.999</h1>
                   <span class="opacity-60 font-11"
-                    ><del>$7<sup>.99</sup></del> (- 40%)</span
+                    ><del>Rp 7.999</del> (- 40%)</span
                   >
                 </div>
                 <div class="align-self-center ms-auto">
@@ -115,9 +115,9 @@
         </div>
         <div class="splide__slide">
           <div class="card card-style mx-3">
-            <img src="assets/images/food/500x500/4.png" class="img-fluid my-3" />
+            <img src="assets/images/banner5.jpg" class="img-fluid my-3" />
             <div class="content">
-              <h3 class="mb-0">Caesar Salad</h3>
+              <h3 class="mb-0">Motor Mechanic</h3>
               <a href="#">
                 <i class="fa fa-star color-yellow-dark font-10"></i>
                 <i class="fa fa-star color-yellow-dark font-10"></i>
@@ -126,13 +126,13 @@
                 <i class="fa fa-star color-yellow-dark font-10"></i>
                 <span class="font-11 ps-2 color-theme opacity-30">Based on 331 Reviews</span>
               </a>
-              <h5 class="font-13 font-600 opacity-50 pt-1 pb-2">Fresh iceberg salad with small slices of Apple and vinegar topping.</h5>
+              <h5 class="font-13 font-600 opacity-50 pt-1 pb-2">Repaire your motor evriware</h5>
               <div class="divider mb-2"></div>
               <div class="d-flex">
                 <div class="align-self-center">
-                  <h1 class="mt-1 mb-n2 font-800">$1<sup class="font-400 font-14">.99</sup></h1>
+                  <h1 class="mt-1 mb-n2 font-800">Rp 18.999</h1>
                   <span class="opacity-60 font-11"
-                    ><del>$2<sup>.99</sup></del> (- 40%)</span
+                    ><del>Rp 24.999</del> (- 40%)</span
                   >
                 </div>
                 <div class="align-self-center ms-auto">
@@ -151,8 +151,8 @@
       <div class="splide__list">
         <div class="splide__slide">
           <div class="card card-style text-center mb-0">
-            <img src="assets/images/food/500x500/1.png" class="my-4 mx-auto img-fluid" />
-            <h3 class="mb-0">Beef Burger</h3>
+            <img src="assets/images/banner1.jpg" class="my-4 mx-auto img-fluid" />
+            <h3 class="mb-0">Unit Laundry</h3>
             <p class="text-center mb-3">
               <i class="fa fa-star color-yellow-dark"></i>
               <i class="fa fa-star color-yellow-dark"></i>
@@ -161,9 +161,9 @@
               <i class="fa fa-star color-yellow-dark"></i>
               <span class="font-10 ps-2 color-theme opacity-30 d-block mt-n2">Based on 331 Reviews</span>
             </p>
-            <h1 class="mb-n2 font-800">$3<sup class="font-400 font-14">.99</sup></h1>
+            <h1 class="mb-n2 font-800">Rp 5.999</h1>
             <span class="opacity-60 font-11 pb-4"
-              ><del>$9<sup>.99</sup></del> (- 40%)</span
+              ><del>Rp 9.999</del> (- 40%)</span
             >
           </div>
           <div class="text-center mt-2">
@@ -173,8 +173,8 @@
         </div>
         <div class="splide__slide">
           <div class="card card-style text-center mb-0">
-            <img src="assets/images/food/500x500/12.png" class="my-4 mx-auto img-fluid" />
-            <h3 class="mb-0">Veggie Pizza</h3>
+            <img src="assets/images/banner2.jpg" class="my-4 mx-auto img-fluid" />
+            <h3 class="mb-0">Pest Control</h3>
             <p class="text-center mb-3">
               <i class="fa fa-star color-yellow-dark"></i>
               <i class="fa fa-star color-yellow-dark"></i>
@@ -183,9 +183,9 @@
               <i class="fa fa-star color-yellow-dark"></i>
               <span class="font-10 ps-2 color-theme opacity-30 d-block mt-n2">Based on 331 Reviews</span>
             </p>
-            <h1 class="mb-n2 font-800">$399<sup class="font-400 font-14">.99</sup></h1>
+            <h1 class="mb-n2 font-800">Rp 39.999</h1>
             <span class="opacity-60 font-11 pb-4"
-              ><del>$299<sup>.99</sup></del> (- 40%)</span
+              ><del>Rp 49.999</del> (- 40%)</span
             >
           </div>
           <div class="text-center mt-2">
@@ -193,7 +193,74 @@
             <a href="#" data-toast="snackbar-cart" class="icon icon-xs bg-theme rounded-l shadow-l mx-2 rounded-xs border-theme border-xxs color-theme"><i class="fa fa-shopping-bag font-14"></i></a>
           </div>
         </div>
+        <div class="splide__slide">
+            <div class="card card-style text-center mb-0">
+              <img src="assets/images/banner5.jpg" class="my-4 mx-auto img-fluid" />
+              <h3 class="mb-0">Car Towing</h3>
+              <p class="text-center mb-3">
+                <i class="fa fa-star color-yellow-dark"></i>
+                <i class="fa fa-star color-yellow-dark"></i>
+                <i class="fa fa-star color-yellow-dark"></i>
+                <i class="fa fa-star color-yellow-dark"></i>
+                <i class="fa fa-star color-yellow-dark"></i>
+                <span class="font-10 ps-2 color-theme opacity-30 d-block mt-n2">Based on 331 Reviews</span>
+              </p>
+              <h1 class="mb-n2 font-800">Rp 349.999</h1>
+              <span class="opacity-60 font-11 pb-4"
+                ><del>Rp 599.999</del> (- 40%)</span
+              >
+            </div>
+            <div class="text-center mt-2">
+              <a href="#" data-toast="snackbar-favorites" class="icon icon-xs bg-theme rounded-l shadow-l mx-2 rounded-xs border-theme border-xxs color-theme"><i class="fa fa-heart color-red-dark font-14"></i></a>
+              <a href="#" data-toast="snackbar-cart" class="icon icon-xs bg-theme rounded-l shadow-l mx-2 rounded-xs border-theme border-xxs color-theme"><i class="fa fa-shopping-bag font-14"></i></a>
+            </div>
+          </div>
+          <div class="splide__slide">
+            <div class="card card-style text-center mb-0">
+              <img src="assets/images/banner3.jpg" class="my-4 mx-auto img-fluid" />
+              <h3 class="mb-0">Cleaning Small Room</h3>
+              <p class="text-center mb-3">
+                <i class="fa fa-star color-yellow-dark"></i>
+                <i class="fa fa-star color-yellow-dark"></i>
+                <i class="fa fa-star color-yellow-dark"></i>
+                <i class="fa fa-star color-yellow-dark"></i>
+                <i class="fa fa-star color-yellow-dark"></i>
+                <span class="font-10 ps-2 color-theme opacity-30 d-block mt-n2">Based on 331 Reviews</span>
+              </p>
+              <h1 class="mb-n2 font-800">Rp 34.999</h1>
+              <span class="opacity-60 font-11 pb-4"
+                ><del>Rp 49.999</del> (- 40%)</span
+              >
+            </div>
+            <div class="text-center mt-2">
+              <a href="#" data-toast="snackbar-favorites" class="icon icon-xs bg-theme rounded-l shadow-l mx-2 rounded-xs border-theme border-xxs color-theme"><i class="fa fa-heart color-red-dark font-14"></i></a>
+              <a href="#" data-toast="snackbar-cart" class="icon icon-xs bg-theme rounded-l shadow-l mx-2 rounded-xs border-theme border-xxs color-theme"><i class="fa fa-shopping-bag font-14"></i></a>
+            </div>
+          </div>
+          <div class="splide__slide">
+            <div class="card card-style text-center mb-0">
+              <img src="assets/images/banner4.jpg" class="my-4 mx-auto img-fluid" />
+              <h3 class="mb-0">Laundry Full Services</h3>
+              <p class="text-center mb-3">
+                <i class="fa fa-star color-yellow-dark"></i>
+                <i class="fa fa-star color-yellow-dark"></i>
+                <i class="fa fa-star color-yellow-dark"></i>
+                <i class="fa fa-star color-yellow-dark"></i>
+                <i class="fa fa-star color-yellow-dark"></i>
+                <span class="font-10 ps-2 color-theme opacity-30 d-block mt-n2">Based on 331 Reviews</span>
+              </p>
+              <h1 class="mb-n2 font-800">Rp 4.999</h1>
+              <span class="opacity-60 font-11 pb-4"
+                ><del>Rp 7.999</del> (- 40%)</span
+              >
+            </div>
+            <div class="text-center mt-2">
+              <a href="#" data-toast="snackbar-favorites" class="icon icon-xs bg-theme rounded-l shadow-l mx-2 rounded-xs border-theme border-xxs color-theme"><i class="fa fa-heart color-red-dark font-14"></i></a>
+              <a href="#" data-toast="snackbar-cart" class="icon icon-xs bg-theme rounded-l shadow-l mx-2 rounded-xs border-theme border-xxs color-theme"><i class="fa fa-shopping-bag font-14"></i></a>
+            </div>
+          </div>
       </div>
+
     </div>
   </div>
   <div class="divider divider-margins"></div>
@@ -205,7 +272,7 @@
           <p class="font-11 opacity-50 mt-n2 mb-4">Enjoy an unforgettable Experience</p>
         </div>
         <div class="ms-auto me-2 align-self-center">
-          <i class="fa fa-utensils color-dark-dark fa-3x mt-4 mb-4 me-3"></i>
+          <i class="fa fa-magic color-dark-dark fa-3x mt-4 mb-4 me-3"></i>
         </div>
       </div>
     </div>
@@ -218,7 +285,7 @@
           <p class="font-11 opacity-50 mt-n2 mb-4">Order it, we'll deliver.</p>
         </div>
         <div class="ms-auto me-2 align-self-center">
-          <i class="fa fa-hamburger color-brown-dark fa-3x mt-4 mb-4 me-1"></i>
+          <i class="fa fa-shield-alt color-brown-dark fa-3x mt-4 mb-4 me-1"></i>
         </div>
       </div>
     </div>
@@ -231,7 +298,7 @@
           <p class="font-11 opacity-50 mt-n2 mb-4">Fresh made and sweet!</p>
         </div>
         <div class="ms-auto me-2 align-self-center">
-          <i class="fa fa-ice-cream color-red-dark fa-3x mt-4 mb-4 me-1"></i>
+          <i class="fa fa-bug color-red-dark fa-3x mt-4 mb-4 me-1"></i>
         </div>
       </div>
     </div>

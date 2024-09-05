@@ -14,16 +14,16 @@
                 <div class="d-flex mb-4">
                     <div>
                         <img
-                            src="assets/images/food/full/1s.jpg"
+                            src="assets/images/banner5.jpg"
                             class="rounded-m shadow-xl"
                             width="130"
                         />
                     </div>
                     <div class="ms-3">
                         <h5 class="font-600">
-                            Your awesome long or short product title
+                            Mekanik Car
                         </h5>
-                        <h1 class="pt-3">$99.<sup>99</sup></h1>
+                        <h1 class="pt-3">Rp 99.999</h1>
                         <a href="#" class="color-theme opacity-50 font-10"
                             ><i class="fa fa-times color-red-dark pe-2 pt-3"></i
                             >Remove</a
@@ -84,16 +84,16 @@
                 <div class="d-flex mb-4">
                     <div>
                         <img
-                            src="assets/images/food/full/8s.jpg"
+                            src="assets/images/banner3.jpg"
                             class="rounded-m shadow-xl"
                             width="130"
                         />
                     </div>
                     <div class="ms-3">
                         <h5 class="font-600">
-                            iMac 27" 5k Display and Accessories
+                            Cleaning Room
                         </h5>
-                        <h1 class="pt-3">$2499.<sup>99</sup></h1>
+                        <h1 class="pt-3">Rp 249.999</h1>
                         <a href="#" class="color-theme opacity-50 font-10"
                             ><i class="fa fa-times color-red-dark pe-2 pt-3"></i
                             >Remove</a
@@ -154,16 +154,16 @@
                 <div class="d-flex mb-4">
                     <div>
                         <img
-                            src="assets/images/food/full/2s.jpg"
+                            src="assets/images/banner2.jpg"
                             class="rounded-m shadow-xl"
                             width="130"
                         />
                     </div>
                     <div class="ms-3">
                         <h5 class="font-600">
-                            Macbook Pro 13" Core i7, 16GB, 512 SSD
+                            Pest Controll Services
                         </h5>
-                        <h1 class="pt-3">$1499.<sup>99</sup></h1>
+                        <h1 class="pt-3">Rp 149.999</h1>
                         <a href="#" class="color-theme opacity-50 font-10"
                             ><i class="fa fa-times color-red-dark pe-2 pt-3"></i
                             >Remove</a
@@ -223,15 +223,15 @@
         <div class="content">
             <div class="d-flex mb-2">
                 <div><h5 class="opacity-50 font-500">Shipping</h5></div>
-                <div class="ms-auto"><h5>$150</h5></div>
+                <div class="ms-auto"><h5>Rp 150</h5></div>
             </div>
             <div class="d-flex mb-2">
                 <div><h5 class="opacity-50 font-500">Taxes</h5></div>
-                <div class="ms-auto"><h5>$50</h5></div>
+                <div class="ms-auto"><h5>Rp 50</h5></div>
             </div>
             <div class="d-flex mb-3">
                 <div><h4 class="font-700">Grand Total</h4></div>
-                <div class="ms-auto"><h3>$3.500</h3></div>
+                <div class="ms-auto"><h3>Rp 3.500</h3></div>
             </div>
             <div class="divider"></div>
             <a

@@ -3,3 +3,5 @@
     <link rel="stylesheet" type="text/css" href={{asset("assets/fonts/css/fontawesome-all.min.css")}} />
     <link rel="manifest" href={{asset("assets/_manifest.json")}} data-pwa-version="set_in_manifest_and_pwa_js" />
     <link rel="apple-touch-icon" sizes="180x180" href={{asset("assets/images/icons/icon-192x192.png")}} />
+    <link rel="stylesheet" type="text/css" href={{asset("assets/styles/datatables.bootstrap5.css")}} />
+    <link rel="stylesheet" type="text/css" href={{asset("assets/styles/sweetalert2.css")}} />

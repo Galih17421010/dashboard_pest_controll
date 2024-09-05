@@ -216,25 +216,25 @@
                     <i class="color-gray-dark fa fa-angle-right"></i>
                 </a>
                 <a href="#">
-                    <span class="font-400 color-blue-dark">Eazy Mobile</span>
+                    <span class="font-400 color-blue-dark">Cleaning</span>
                     <i class="color-gray-dark fa fa-angle-right"></i>
                 </a>
                 <a href="#">
-                    <span class="font-400 color-blue-dark">Mega Mobile</span>
+                    <span class="font-400 color-blue-dark">Laundry</span>
                     <i class="color-gray-dark fa fa-angle-right"></i>
                 </a>
                 <a href="#">
-                    <span class="font-400 color-blue-dark">Ultra Mobile</span>
+                    <span class="font-400 color-blue-dark">Pest Control</span>
                     <i class="color-gray-dark fa fa-angle-right"></i>
                 </a>
                 <a href="#">
-                    <span class="font-400 color-blue-dark">Kolor Mobile</span>
+                    <span class="font-400 color-blue-dark">Mekanik</span>
                     <i class="color-gray-dark fa fa-angle-right"></i>
                 </a>
-                <a href="#" class="border-0">
+                {{-- <a href="#" class="border-0">
                     <span class="font-400 color-blue-dark">Vinga Mobile</span>
                     <i class="color-gray-dark fa fa-angle-right"></i>
-                </a>
+                </a> --}}
             </div>
         </div>
     </div>

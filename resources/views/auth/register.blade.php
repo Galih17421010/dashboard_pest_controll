@@ -42,7 +42,7 @@
                                 @csrf
                                 <div class="input-style no-borders has-icon validate-field">
                                     <i class="fa fa-user"></i>
-                                    <input type="name" name="name" class="form-control validate-name" id="name" placeholder="Name" required />
+                                    <input type="text" name="name" class="form-control validate-name" id="name" placeholder="Name" required />
                                     <label for="form1a" class="color-blue-dark font-10 mt-1">Name</label>
                                     <i class="fa fa-times disabled invalid color-red-dark"></i>
                                     <i class="fa fa-check disabled valid color-green-dark"></i>

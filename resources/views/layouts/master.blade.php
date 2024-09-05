@@ -35,5 +35,6 @@
 
     </div>
     @include('layouts.script')
+    @yield('scripts')
   </body>
 </html>

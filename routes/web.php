@@ -9,6 +9,7 @@ use App\Http\Controllers\OrderController;
 use App\Http\Controllers\PestController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\SearchController;
+use App\Http\Controllers\ServicesController;
 use Illuminate\Support\Facades\Route;
 
 // Route::get('/', function () {
@@ -42,6 +43,7 @@ Route::middleware('auth')->group(function () {
 
     Route::resource('checkout', CheckoutController::class)->names('checkout');
 
+    Route::resource('services', ServicesController::class)->names('services');
 });
 
 require __DIR__ . '/auth.php';
