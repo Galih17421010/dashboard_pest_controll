@@ -235,9 +235,9 @@
             </div>
             <div class="divider"></div>
             <a
-                href="#"
+                href="{{route('checkout.index')}}"
                 class="btn btn-full bg-highlight btn-m text-uppercase font-800 rounded-sm"
-                >Proceed to Checkout</a
+                >Checkout</a
             >
         </div>
     </div>

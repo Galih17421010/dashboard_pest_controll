@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\CartController;
+use App\Http\Controllers\CheckoutController;
 use App\Http\Controllers\CleaningController;
 use App\Http\Controllers\FavoriteController;
 use App\Http\Controllers\LaundryController;
@@ -38,6 +39,8 @@ Route::middleware('auth')->group(function () {
     Route::resource('cart', CartController::class)->names('cart');
 
     Route::resource('favorite', FavoriteController::class)->names('favorite');
+
+    Route::resource('checkout', CheckoutController::class)->names('checkout');
 
 });
 
