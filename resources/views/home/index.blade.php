@@ -1,6 +1,7 @@
 @extends('layouts.master')
 @section('navhead')
 <div class="header header-fixed header-auto-show header-logo-center">
+    @section('title', 'Home Services' )
     @include('layouts.navhead')
 </div>
 @endsection
@@ -14,8 +15,8 @@
   <div class="content mt-2">
     <div class="d-flex">
       <div class="align-self-center">
-        <h1 class="font-26">Order Now</h1>
-        <p class="mb-0 mt-n2 font-11">Delivered to your doorstep</p>
+        <h1 class="font-26">{{ config('app.name', 'Laravel') }}</h1>
+        <p class="mb-0 mt-n2 font-11">Home Services App</p>
       </div>
       <div class="align-self-center ms-auto">
         <a href="#" data-menu="menu-favorites" class="icon icon-s bg-theme rounded-l shadow-l rounded-m ms-2 color-theme"><i class="fa fa-heart color-red-dark font-14"></i></a>
@@ -196,11 +197,11 @@
     </div>
   </div>
   <div class="divider divider-margins"></div>
-  <a href="#">
+  <a href="{{route('cleaning.index')}}">
     <div class="card card-style mb-3">
       <div class="d-flex">
         <div class="ps-2 ms-2 align-self-center">
-          <h1 class="pt-4 font-22">Dining</h1>
+          <h1 class="pt-4 font-22">Cleaning</h1>
           <p class="font-11 opacity-50 mt-n2 mb-4">Enjoy an unforgettable Experience</p>
         </div>
         <div class="ms-auto me-2 align-self-center">
@@ -209,11 +210,11 @@
       </div>
     </div>
   </a>
-  <a href="#">
+  <a href="{{route('laundry.index')}}">
     <div class="card card-style mb-3">
       <div class="d-flex">
         <div class="ps-2 ms-2 align-self-center">
-          <h1 class="pt-4 font-22">Fast Food</h1>
+          <h1 class="pt-4 font-22">Laundry</h1>
           <p class="font-11 opacity-50 mt-n2 mb-4">Order it, we'll deliver.</p>
         </div>
         <div class="ms-auto me-2 align-self-center">
@@ -222,11 +223,11 @@
       </div>
     </div>
   </a>
-  <a href="#">
+  <a href="{{route('pest.index')}}">
     <div class="card card-style">
       <div class="d-flex">
         <div class="ps-2 ms-2 align-self-center">
-          <h1 class="pt-4 font-22">Sweet Tooth</h1>
+          <h1 class="pt-4 font-22">Pest Control</h1>
           <p class="font-11 opacity-50 mt-n2 mb-4">Fresh made and sweet!</p>
         </div>
         <div class="ms-auto me-2 align-self-center">
@@ -235,22 +236,6 @@
       </div>
     </div>
   </a>
-  <div class="footer card card-style">
-    <a href="#" class="footer-title"><span class="color-highlight">StickyMobile</span></a>
-    <p class="footer-text">
-      <span>Made with <i class="fa fa-heart color-highlight font-16 ps-2 pe-2"></i> by Enabled</span><br /><br />Powered by the best Mobile Website Developer on Envato Market. Elite Quality. Elite Products.
-    </p>
-    <div class="text-center mb-3">
-      <a href="#" class="icon icon-xs rounded-sm shadow-l me-1 bg-facebook"><i class="fab fa-facebook-f"></i></a>
-      <a href="#" class="icon icon-xs rounded-sm shadow-l me-1 bg-twitter"><i class="fab fa-twitter"></i></a>
-      <a href="#" class="icon icon-xs rounded-sm shadow-l me-1 bg-phone"><i class="fa fa-phone"></i></a>
-      <a href="#" data-menu="menu-share" class="icon icon-xs rounded-sm me-1 shadow-l bg-red-dark"><i class="fa fa-share-alt"></i></a>
-      <a href="#" class="back-to-top icon icon-xs rounded-sm shadow-l bg-dark-light"><i class="fa fa-angle-up"></i></a>
-    </div>
-    <p class="footer-copyright">Copyright &copy; Enabled <span id="copyright-year">2017</span>. All Rights Reserved.</p>
-    <p class="footer-links"><a href="#" class="color-highlight">Privacy Policy</a> | <a href="#" class="color-highlight">Terms and Conditions</a> | <a href="#" class="back-to-top color-highlight"> Back to Top</a></p>
-    <div class="clear"></div>
-  </div>
 </div>
 
 @endsection
