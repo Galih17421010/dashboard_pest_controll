@@ -36,7 +36,7 @@
             </div>
             <p></p>
             <a
-                href="#"
+                href="{{route('profile.show',["profile"=>Auth::user()->id])}} "
                 class="btn btn-m rounded-sm btn-full bg-highlight font-700 text-uppercase"
                 >Edit Profile</a
             >

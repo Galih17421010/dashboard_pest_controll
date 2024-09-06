@@ -153,7 +153,7 @@ var _0x8254 = [
     "page-highlight",
     "text/css",
     "href",
-    "assets/styles/highlights/highlight_",
+    "../assets/styles/highlights/highlight_",
     ".css",
     "appendChild",
     "head",

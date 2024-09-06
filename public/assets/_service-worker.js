@@ -1,6 +1,6 @@
 var _0x5e02 = [
     "Sticky-Mobile-PWA-v5431-LTR",
-    "../index.php",
+    ".../index.php",
     "install",
     "skipWaiting",
     "then",

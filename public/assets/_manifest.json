@@ -5,7 +5,7 @@
     "comment": "---if versions are not the same it will cause an update loop",
     "lang": "en",
     "name": "Sticky",
-    "scope": "assets/",
+    "scope": "",
     "display": "fullscreen",
     "start_url": "index.php",
     "short_name": "Sticky",
