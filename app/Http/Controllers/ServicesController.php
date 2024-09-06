@@ -13,12 +13,25 @@ class ServicesController extends Controller
     {
         if ($request->ajax()) {
             return DataTables::of(Services::all())
+                ->addColumn('categories', function ($p) {
+                    if ($p->categories == 1) {
+                        $categories = 'Cleaning';
+                    } elseif ($p->categories == 2) {
+                        $categories = 'Laundry';
+                    } elseif ($p->categories == 3) {
+                        $categories = 'Mechanic';
+                    } else {
+                        $categories = 'Pest Control';
+                    }
+                    return $categories;
+                })
                 ->addColumn('action', function ($p) {
                     $btn = '<div class="dropdown">
                     <button class="btn btn-xs " data-bs-toggle="dropdown" aria-expanded="false">
                     <i class="fa fa-ellipsis-v"></i>
                     </button>
                     <ul class="dropdown-menu">
+                      <li><a class="dropdown-item detailBtnServices" href="#" data-id="' . $p->id . '">Detail</a></li>
                       <li><a class="dropdown-item editBtnServices" href="#" data-id="' . $p->id . '">Edit</a></li>
                       <li><a class="dropdown-item deleteBtnServices" href="#" data-id="' . $p->id . '">Delete</a></li>
                     </ul>
@@ -46,6 +59,11 @@ class ServicesController extends Controller
         ]);
 
         return response()->json(['success' => true, 'message' => 'New services has been saved']);
+    }
+
+    public function getCategories()
+    {
+
     }
 
     public function show(string $id)

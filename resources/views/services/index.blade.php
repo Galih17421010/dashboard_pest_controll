@@ -108,6 +108,10 @@
 
                   <select id="categories" name="categories" required>
                     <option value="default" selected disabled>Selected...</option>
+                    <option value="1">Cleaning</option>
+                    <option value="2">Laundry</option>
+                    <option value="3">Mechanic</option>
+                    <option value="4">Pest Control</option>
                   </select>
 
                 </div>
