@@ -2,25 +2,25 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Services;
+use App\Models\Categories;
 use Illuminate\Http\Request;
 use Yajra\DataTables\DataTables;
 
-class ServicesController extends Controller
+class CategoriesController extends Controller
 {
 
     public function index(Request $request)
     {
         if ($request->ajax()) {
-            return DataTables::of(Services::all())
+            return DataTables::of(Categories::all())
                 ->addColumn('action', function ($p) {
                     $btn = '<div class="dropdown">
                     <button class="btn btn-xs " data-bs-toggle="dropdown" aria-expanded="false">
                     <i class="fa fa-ellipsis-v"></i>
                     </button>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item editBtnServices" href="#" data-id="' . $p->id . '">Edit</a></li>
-                      <li><a class="dropdown-item deleteBtnServices" href="#" data-id="' . $p->id . '">Delete</a></li>
+                      <li><a class="dropdown-item editBtn" href="#" data-id="' . $p->id . '">Edit</a></li>
+                      <li><a class="dropdown-item deleteBtn" href="#" data-id="' . $p->id . '">Delete</a></li>
                     </ul>
                   </div>';
                     return $btn;
@@ -38,14 +38,12 @@ class ServicesController extends Controller
 
     public function store(Request $request)
     {
-        Services::updateOrCreate(['id' => $request->idS], [
-            'name' => $request->nameServices,
-            'price' => $request->price,
-            'categories' => $request->categories,
-            'description' => $request->descriptionServices
+        Categories::updateOrCreate(['id' => $request->id], [
+            'name' => $request->name,
+            'description' => $request->description
         ]);
 
-        return response()->json(['success' => true, 'message' => 'New services has been saved']);
+        return response()->json(['success' => true, 'message' => 'New category has been saved']);
     }
 
     public function show(string $id)
@@ -55,8 +53,8 @@ class ServicesController extends Controller
 
     public function edit($id)
     {
-        $services = Services::find($id);
-        return response()->json($services);
+        $category = Categories::find($id);
+        return response()->json($category);
     }
 
     public function update(Request $request, string $id)
@@ -64,10 +62,10 @@ class ServicesController extends Controller
         //
     }
 
-    public function destroy($id)
+    public function destroy(string $id)
     {
-        Services::find($id)->delete();
+        Categories::find($id)->delete();
 
-        return response()->json(['success' => true, 'message' => 'Services deleted successfully.']);
+        return response()->json(['success' => true, 'message' => 'Category deleted successfully.']);
     }
 }
